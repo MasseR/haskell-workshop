@@ -12,6 +12,7 @@ with nixpkgs.pkgs; rec {
       stylish-haskell
       ghcid
       cabal-install
+      hpack
       (ghcWithPackages (_: workshop1.buildInputs ++ workshop1.propagatedBuildInputs))
     ];
   };
