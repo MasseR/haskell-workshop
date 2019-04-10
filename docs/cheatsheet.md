@@ -27,15 +27,7 @@ pagestyle: "empty"
 
   ```haskell
   module Main where
-  ```
-
-- Pattern-matching with `case`:
-
-  ```haskell
-  case expr of          -- test eval of expr
-    pattern1 -> expr1   -- if pattern1 matches, eval expr1
-    pattern2 -> expr2   -- elseif pattern2 matches, eval expr2
-    _        -> exprn   -- else, eval exprn
+  ...
   ```
 
 ## Types
@@ -78,13 +70,13 @@ pagestyle: "empty"
 
 - 
   ```haskell
-  putStrLn :: String -> IO ()
-  B.putStr :: B.ByteString -> IO ()
+  putStrLn                    :: String       -> IO ()
+  Data.ByteString.Lazy.putStr :: B.ByteString -> IO ()
   ```
 
 - Encode a value to JSON:
   ```haskell
-  JSON.encode :: ToJSON a => a -> B.ByteString
+  Data.Aeson.encode :: ToJSON a => a -> B.ByteString
   ```
 
 - Keep only the first element of a list:
@@ -104,19 +96,19 @@ pagestyle: "empty"
 
 - Split a string on `\n`, split a `String` on `Char`:
   ```haskell
-  lines   ::         String -> [String]
-  splitOn :: Char -> String -> [String]
+  lines                   ::         String -> [String]
+  Data.List.Split.splitOn :: Char -> String -> [String]
   ```
 
 - Read a `String` into a Haskell value:
   ```haskell
-  readMaybe :: Read a => String -> Maybe a
+  Data.Read.readMaybe :: Read a => String -> Maybe a
   ```
 
 - Apply a function to all elements of a list, returning a new list.
   ```haskell
-  map      :: (a ->       b) -> [a] -> [b]
-  mapMaybe :: (a -> Maybe b) -> [a] -> [b]
+  map                 :: (a ->       b) -> [a] -> [b]
+  Data.Maybe.mapMaybe :: (a -> Maybe b) -> [a] -> [b]
   ```
 
 - Read/Write a full file into/from a `String`:
