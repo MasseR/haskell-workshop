@@ -18,4 +18,4 @@ script:
   # https://github.com/NixOS/nixpkgs/commit/ab22e8cc9c8f667c09f54f82fcb88f9732c54dfc
   # neovim is executed automatically, but some rplugins don't necessarily play well
   # together with nix store, trying to write stuff outside of the $src or $out
-  nix build -I nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/nixos-$NIXPKGS.tar.gz -f release.nix workshop1 workshop1-slides
+  nix build -I nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/nixos-$NIXPKGS.tar.gz -f release.nix workshop1 workshop1-slides workshop1-cheatsheet
