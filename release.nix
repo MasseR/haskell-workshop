@@ -2,8 +2,9 @@
 
 
 with nixpkgs.pkgs; rec {
-  workshop1 = pkgs.haskellPackages.callPackage ./workshop1 {};
   workshop1-slides = pkgs.callPackage ./workshop1/slides {};
+  workshop1-cheatsheet = pkgs.callPackage ./workshop1/cheatsheet {};
+  workshop1 = pkgs.haskellPackages.callPackage ./workshop1/csv2json {};
   workshop1-shell = pkgs.buildEnv {
     name = "workshop1-shell";
     paths = [];
