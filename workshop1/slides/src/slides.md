@@ -675,7 +675,7 @@ main = do
 
 ## Challenges
 
-- Haskell has lots abstractions one of which is the functor abstraction. Check
+- Haskell has lots of abstractions one of which is the functor abstraction. Check
   the type of `fmap` and see if you can rewrite the `makeCandidate` function
   using fmap.
 - Can you write the function `mapMaybe :: (a -> Just b) -> [a] -> [b]`.
