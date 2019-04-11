@@ -614,10 +614,10 @@ askName = do
 
 * `putStrLn` prints a string
 * `getLine` gets a line of input from the user
-* Do blocks are a special Haskell syntax impure programming
+* Do blocks are syntactic sugar for chaining functions with a state
   * Always start with the `do` keyword
   * Functions executed top-to-bottom
-  * Return values stored in local variables using `(<-)`
+  * Return values stored in “local variables” using `(<-)`
   * `let` used for pure computation
 
 
