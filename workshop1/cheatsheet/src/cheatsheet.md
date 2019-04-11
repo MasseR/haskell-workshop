@@ -14,6 +14,20 @@ pagestyle: "empty"
 
 # Cheatsheet — Haskell Workshop 1
 
+## Stack
+
+- Run the REPL (Read-Eval-Print Loop):
+
+  ```bash
+  $ stack repl
+  ```
+
+- Build the project:
+
+  ```bash
+  $ stack build
+  ```
+
 ## Syntax
 
 - Import the `mapMaybe` function from the `Data.Maybe` module:
