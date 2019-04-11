@@ -675,9 +675,20 @@ main = do
 
 ## Challenges
 
+- Haskell has lots abstractions one of which is the functor abstraction. Check
+  the type of `fmap` and see if you can rewrite the `makeCandidate` function
+  using fmap.
+- Can you write the function `mapMaybe :: (a -> Just b) -> [a] -> [b]`.
+  Remember how `map :: (a -> b) -> [a] -> [b]` was implemented?
+- We have a list of possible candidates, can you make it into a list of
+  definite candidates? `[Maybe Candidate]` into `[Candidate]`.
+- We used generics to derive the JSON encoder. Could you write the `ToJSON` instance by hand?
+  - [Writing instances by hand](http://hackage.haskell.org/package/aeson-1.4.2.0/docs/Data-Aeson.html#g:2)
+
 ## Further Reading
 
 * [Syntax and basics: Learn You A Haskell](http://learnyouahaskell.com/chapters)
+* [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
 * [Great set of exercises: FP Course](https://github.com/data61/fp-course)
 * [The Haskell Book](http://haskellbook.com/)
 * [School of Haskell](https://www.schoolofhaskell.com/)
